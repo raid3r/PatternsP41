@@ -1,7 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using PatternsP41.Creational;
+using PatternsP41.Structural;
 
-Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 
 
 
@@ -42,26 +43,62 @@ Console.WriteLine("Hello, World!");
 - Поведінкові (Behavioral) - зосереджені на взаємодії між об'єктами та їх поведінці.
 
 
- - Породжуючі (Creational)
+Породжуючі (Creational)
 - Одиночка (Singleton)
 - Фабричний метод (Factory Method)  
 - Абстрактна фабрика (Abstract Factory)
 - Будівельник (Builder)
 - Прототип (Prototype)
 
+Структурні (Structural)
+- Адаптер (Adapter)
+- Міст (Bridge)
+- Компоновщик (Composite)
+- Декоратор (Decorator)
+- Фасад (Facade)
+- Легковаговик (Flyweight)
+- Замісник (Proxy)
+
+Поведінкові (Behavioral)
+- Ланцюжок відповідальності (Chain of Responsibility)
+- Команда (Command)
+- Ітертор (Iterator)
+- Посередник (Mediator)
+- Знімок (Memento)
+- Спостерігач (Observer)
+- Стан (State)
+- Стратегія (Strategy)
+- Шаблонний метод (Template Method)
+- Відвідувач (Visitor)
+
+
+
  */
 
-void SomeMethod()
-{
-    var singleton2 = SingletonService.Instance;
-    Console.WriteLine(singleton2.CreatedAt);
-}
+//void SomeMethod()
+//{
+//    var singleton2 = SingletonService.Instance;
+//    Console.WriteLine(singleton2.CreatedAt);
+//}
 
 
 
-//var singleton1 = SingletonService.Instance;
-//Console.WriteLine(singleton1.CreatedAt);
-//Thread.Sleep(2000);
-//SomeMethod();
+////var singleton1 = SingletonService.Instance;
+////Console.WriteLine(singleton1.CreatedAt);
+////Thread.Sleep(2000);
+////SomeMethod();
 
-Console.WriteLine("Press any key to exit...");
+//Console.WriteLine("Press any key to exit...");
+
+
+//var clientCode = new PrototypeExampleClientCode();
+//clientCode.Run();
+
+//var clientCode = new BuilderExampleClientCode();
+//clientCode.Run();
+
+//var clientCode = new AdapterExampleClientCode();
+//clientCode.Run();
+
+var clientCode = new CompositeExampleClientCode();
+clientCode.Run();
