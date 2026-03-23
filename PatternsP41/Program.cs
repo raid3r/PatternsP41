@@ -54,6 +54,7 @@ using PatternsP41.Structural;
 - Адаптер (Adapter)
 - Міст (Bridge)
 - Компоновщик (Composite)
+
 - Декоратор (Decorator)
 - Фасад (Facade)
 - Легковаговик (Flyweight)
@@ -100,5 +101,8 @@ using PatternsP41.Structural;
 //var clientCode = new AdapterExampleClientCode();
 //clientCode.Run();
 
-var clientCode = new CompositeExampleClientCode();
+//var clientCode = new CompositeExampleClientCode();
+//clientCode.Run();
+
+var clientCode = new DecoratorExampleClientCode();
 clientCode.Run();
